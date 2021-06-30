@@ -5,7 +5,7 @@
   <script type="text/javascript">
     function LoadPage() {
       const urlParams = new URLSearchParams(window.location.search);
-      const url = encodeURIComponent(urlParams.get('url'));
+      const url = encodeURI(urlParams.get('url'));
       document.getElementById('diagram').src = url;
     }
   </script>
